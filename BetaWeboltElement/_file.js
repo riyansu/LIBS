@@ -47,3 +47,23 @@ const FileManager = new class{
 //         return this.value
 //     }
 // }
+
+// function setAsDropReader(id,func){
+//     const elem = document.getElementById(id)
+//     if(!elem){
+//         try{throw new Error();}
+//         catch(error){
+//             console.error(`Richtml/_file Loading Element Error:\n Failed to load element with ID:"${id}" \n${error.stack.split("\n")[2]}`)
+//             return
+//         }
+//     }else{
+//         //ondragover="onDragOver(event)" ondrop="onDrop(event)"
+//         elem.ondragover = (e)=>{e.preventDefault()}
+//         elem.ondrop = (e)=>{
+//             func(e.dataTransfer)
+//             e.preventDefault()
+//         }
+//     }
+// }
+
+const FileSupported = (window.File)?true:false

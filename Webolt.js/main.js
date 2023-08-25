@@ -53,4 +53,8 @@ window.onload=()=>{
     console.log(User.browser)
     console.log(User.language)
     console.log(Cookie.get("test=nicea"))
+    console.log(FileSupported)
+    setAsDropReader(Main.id,(data)=>{
+        console.log(data)
+    })
 }
